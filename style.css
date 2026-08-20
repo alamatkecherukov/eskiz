@@ -1,0 +1,506 @@
+@font-face {
+    font-family: os;
+    src: url(fonts/SSFBreakthrough-Regular.ttf);
+}
+@font-face {
+    font-family: or;
+    src: url(fonts/organetto-ultrabold.ttf);
+}
+* {
+    margin: 0 auto;
+    font-family: os, sans-serif;
+    transition: all 0.3s ease !important;
+    scroll-behavior: smooth;
+    scroll-margin-top: 50vh;
+}
+:root {
+    --txt: #5E3122;
+    --bc: linear-gradient(140deg, #F7EAE0 0%, #d8d0ca 100%);
+    --shc: linear-gradient(140deg, rgba(177, 177, 177, 0.459) 0%, rgba(168, 166, 166, 0.644) 100%);
+    --pod : #5E3122;
+    --bc2: linear-gradient(140deg, #1D4533 0%, #1a3629 100%);
+}
+
+.block1 {
+    background: var(--bc);
+    border-radius: 10px;
+    box-shadow: 5px 3px 60px rgba(0,0,0,0.20);
+    margin-bottom: 20px;
+    width: 80%;
+}
+.block2 {
+    background: var(--bc2);
+    padding: 0% !important;
+    box-shadow: 5px 3px 60px rgba(0,0,0,0.20);
+    margin-bottom: 20px;
+    width: 80%;
+}
+
+@media (max-width: 852px) {
+    /* Сброс */
+    * {
+        overflow-x: hidden;
+        box-sizing: border-box;
+        max-width: 100%;
+        margin: 0;
+    }
+    html, body {
+        overflow-x: hidden;
+        width: 100%;
+        margin: 0;
+        padding: 1% 3% 1% 3%;
+    }
+    .block1{
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+        margin: 10px 0;
+    }
+    .block2{
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+        margin: 10px 0;
+    }
+    
+    .b2 img {
+        width: 100%;
+        height: auto;
+    }
+    .b2 p {
+    font-size: 150% !important;
+    display: flex;
+    text-align: center;
+    align-items: flex-start;
+    padding: 5%;
+    color: var(--txt);
+    font-weight: 100;
+    font-family: or, sans-serif;
+}
+
+    /* СЕТКА — 2 КОЛОНКИ */
+    .grid-3 {
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 10px !important;
+        padding: 0 10px !important;
+        width: 100% !important;
+        box-sizing: border-box !important;
+    }
+    
+    .grid-3 .card {
+        background: var(--bc) !important;
+        width: 100% !important;
+        height: auto;
+        padding: 15px !important;
+        border: 1px solid #ddd;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        margin: 0 !important;
+    }
+    
+    .card img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 15px;
+    }
+    .card a {
+        font-size: 80%;
+    }
+    header {
+    display: flex;
+    
+justify-self: center;
+   
+    background: var(--shc) !important;   /* прозрачный фон */
+    backdrop-filter: blur(4px) !important;            /* размытие фона */
+    border: 1px solid rgba(255, 255, 255, 0.2) !important; /* тонкая рамка */
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1) !important; /* легкая тень */
+    margin-top: 20px;
+    padding: 1% 6% !important;
+    z-index: 1000;
+    position: fixed;
+    border-radius: 15px;
+    gap: 20px !important;
+ 
+}
+header A {
+    font-family: or, sans-serif;
+    font-size: 80% !important;
+    color: #5E3122 !important;
+    text-decoration: 0;
+    
+    
+    
+    
+    
+}
+header A:hover {
+    color: #1D4533 !important;
+    text-decoration: none;
+    
+}
+.hero {
+    margin-top: 20px;
+    text-align: left;
+    padding: 90% 4% !important;
+    font-size: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: var(--txt) ;
+    
+}
+.hero h1 {
+    font-size: 4rem;
+    display: flex;
+    text-align: left !important;
+    align-items: flex-start;
+    padding: 2% 4%;
+    color: var(--txt);
+}
+.hero p {
+    font-size: 1.5rem;
+    display: flex;
+    text-align: left !important;
+    align-items: flex-start;
+    padding: 2% 4%;
+    color: var(--txt);
+}
+.b3{
+    font-size: 130% !important;
+}
+.b3 h1{
+    font-size: 2rem !important;
+    padding: 4% 0%;
+}
+.b5{
+    text-align: left;
+    padding: 6% 10% 6% 7%;
+    font-size: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    color: var(--txt);
+}
+.b5 a{
+    font-size: 150% !important;}
+
+
+
+
+}
+.asd{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.asd img{
+    width: 20%;
+    height: auto;
+    margin: 0 auto;
+    filter: invert(100%);
+}
+.pod{
+    text-align: center;
+    padding: 6% 10% 6% 7%;
+    font-size: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: var(--txt);
+    background: var(--pod);
+    border-radius: 10px;
+    color: #fff;
+}
+
+
+@media (min-width: 800px) {
+    * {
+        overflow-x: hidden;
+        box-sizing: border-box;
+        max-width: 100%;
+    }
+    html, body {
+        overflow-x: hidden;
+        width: 100%;
+        margin: 0;
+        max-width: 900px;
+        margin: 0 auto;
+    }
+    .block1 {
+        box-shadow: 5px 3px 60px rgba(0,0,0,0.20);
+        max-width: 80%;
+        height: auto;
+        margin-top: 20px;
+    }
+    .block2 {
+        box-shadow: 5px 3px 60px rgba(0,0,0,0.20);
+        max-width: 80%;
+        height: auto;
+        margin-top: 20px;
+    }
+    .b2 img {
+        width: 50%;
+        height: auto; /* было 50% — исправил на auto */
+    }
+    
+    .grid-3 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        margin: 0 auto;
+    }
+    .card {
+        background: var(--bc) !important;
+        padding: 30px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+    }
+    .card img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 15px;
+    }
+}
+
+.hero {
+    margin-top: 70px;
+    text-align: left;
+    padding: 6% 4%;
+    font-size: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: var(--txt);
+    margin-bottom: 20px;
+}
+.hero h1 {
+    font-size: 4rem;
+    display: flex;
+    text-align: center;
+    align-items: flex-start;
+    padding: 2% 4%;
+    color: var(--txt);
+}
+.b1 {
+    text-align: left;
+    padding: 6% 4%;
+    font-size: 120%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: var(--txt);
+}
+.b2 {
+    text-align: left;
+    padding: 6% 4%;
+    font-size: 100%;
+    display: flex;
+    color: var(--txt);
+}
+.b2 img {
+    width: 50%;
+    height: auto;
+}
+.b2 p {
+    font-size: 300%;
+    display: flex;
+    text-align: center;
+    align-items: flex-start;
+    padding: 5%;
+    color: #fff;
+    font-weight: 100;
+    font-family: or, sans-serif;
+}
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+.card {
+    background: var(--bc) !important;
+    padding: 30px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+}
+.card p{
+    font-weight: 100;
+    word-break: break-all;
+}
+.card a{
+    font-family: or, sans-serif;
+    text-decoration: none;
+    color: #d1dbdb;
+    background: #102020;
+    width: 80%;
+    height: auto;
+    padding: 10px;
+    border-radius: 10px;
+    
+}
+.card a:hover{
+    background: #608385;
+}
+header {
+    display: flex;
+    
+justify-self: center;
+    max-height: 30%px;
+    background: 
+    var(--shc);   /* прозрачный фон */
+    backdrop-filter: blur(4px);            /* размытие фона */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* тонкая рамка */
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    padding: 1% 4%;
+    z-index: 1000;
+    position: fixed;
+    border-radius: 15px;
+ 
+}
+header A {
+    font-family: or, sans-serif;
+    font-size: 100%;
+    color: #5E3122;
+    text-decoration: 0;
+    
+    
+    
+    
+}
+header A:hover {
+    color: #1D4533;
+    text-decoration: none;
+}
+.b3{
+    text-align: left;
+    padding: 6% 4%;
+    font-size: 200%;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    color: var(--txt);
+}
+.b3 h1{
+    font-size: 4rem;
+    display: flex;
+    text-align: left;
+    align-items: flex-start;
+    padding: 2% 0%;
+    color: var(--txt);
+}
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    padding-left: 20px;
+    position: relative;
+    
+}
+
+li::before {
+    content: "•";           /* ← точка */
+    color: #000;
+    
+    left: 0;
+    font-size: 150%;
+}
+.b5{
+    text-align: left;
+    padding: 6% 10% 6% 7%;
+    
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    color: var(--txt);
+}
+.b5 a{
+    font-size: 150% !important;
+    text-decoration: none;
+    color: rgb(245, 250, 250);
+    font-weight: 500;
+    background: rgb(27, 68, 68);
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 10px;
+
+}
+.b5 h1{
+font-size: 4rem;
+    display: flex;
+    text-align: left;
+    align-items: flex-start;
+    padding: 2% 0%;
+    color: var(--txt);
+}
+.b5 a:hover{
+    color: var(--sss2);
+    text-decoration: none;
+    background: rgb(207, 194, 8);
+}
+.asd{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 0px;
+}
+.asd img{
+     width: 30%;
+    height: auto;
+    filter: invert(100%);
+    padding: 0;              /* ← убираем padding, чтобы соприкасались */
+    display: block;
+    
+}
+.pod{
+    text-align: center;
+    padding: 6% 10% 6% 7%;
+    font-size: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: var(--txt);
+    background: var(--pod);
+    border-radius: 10px;
+    color: #fff;
+    overflow: hidden;
+    
+}
+.asd {
+    display: flex;           /* ← применяем к контейнеру со ссылками */
+    justify-content: center; /* ← центрируем по горизонтали */
+    gap: 20px;               /* ← расстояние между иконками */
+    align-items: center;     /* ← выравниваем по вертикали */
+}
+
+.asd a {
+    display: inline-block;   /* ← ссылки как блоки */
+    line-height: 0;          /* ← убираем лишнее пространство */
+}
+
+.asd img {
+    width: 40px;             /* ← задай нужный размер */
+    height: 40px;
+    filter: invert(100%);
+    display: block;          /* ← убираем лишние отступы снизу */
+    transition: transform 0.3s ease; /* ← плавность при наведении */
+}
+
+.asd A:hover {
+    transform: scale(0.9);   /* ← увеличение при наведении */
+}
+html, body {
+    overflow-x: hidden;
+}
